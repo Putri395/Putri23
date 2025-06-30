@@ -1,13 +1,11 @@
 <html lang="id">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beranda - Putri Riantika</title>
+    <title>Profil - Putri Riantika</title>
     <link rel="stylesheet" href="testes.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-
 <body>
 
 <div class="container mt-4">
@@ -16,7 +14,7 @@
     <h1 class="text-center mb-4">WELCOME TO MY WEBSITE</h1>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
         <div class="container-fluid">
             <a class="navbar-brand" href="Index.html">Beranda</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -43,43 +41,72 @@
     </nav>
 
     <!-- Carousel -->
-    <div id="carouselExampleIndicators" class="carousel slide mb-5">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+    <div class="col-12 col-md-8 mx-auto mb-5">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="ab.jpg" class="d-block w-100" alt="Gambar 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="cd.jpg" class="d-block w-100" alt="Gambar 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="oi.jpeg" class="d-block w-100" alt="Gambar 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Sebelumnya</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Berikutnya</span>
+            </button>
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="ab.jpg" class="d-block w-100" alt="Gambar 1">
-            </div>
-            <div class="carousel-item">
-                <img src="cd.jpg" class="d-block w-100" alt="Gambar 2">
-            </div>
-            <div class="carousel-item">
-                <img src="oi.jpeg" class="d-block w-100" alt="Gambar 3">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-            <span class="visually-hidden">Sebelumnya</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-            <span class="visually-hidden">Berikutnya</span>
-        </button>
     </div>
 
-    <!-- Beranda Section -->
-    <div class="beranda text-center mx-auto mb-5">
-        <h2 class="mb-3">Selamat Datang di Website Saya</h2>
-        <p>Website sederhana ini berisi informasi pribadi, galeri foto, artikel menarik, dan informasi tentang saya.</p>
+    <!-- Profil Card -->
+    <div class="card shadow p-4 mb-5">
+        <div class="row align-items-center">
+            
+            <!-- Foto Profil -->
+            <div class="col-md-4 text-center mb-3 mb-md-0">
+                <img src="sma.jpeg" alt="Foto Profil" class="img-fluid rounded-circle border" style="max-width: 200px;">
+            </div>
+
+            <!-- Data Diri -->
+            <div class="col-md-8">
+                <h3 class="mb-4">Data Diri</h3>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><strong>Nama:</strong> Putri Riantika</li>
+                    <li class="list-group-item"><strong>NIM:</strong> 16324023</li>
+                    <li class="list-group-item"><strong>Tempat, Tanggal Lahir:</strong> Fakfak, 3 September 2005</li>
+                    <li class="list-group-item"><strong>Jenis Kelamin:</strong> Perempuan</li>
+                    <li class="list-group-item"><strong>Alamat:</strong> Jl. Kokas</li>
+                    <li class="list-group-item"><strong>Email:</strong> putririantika05@gmail.com</li>
+                    <li class="list-group-item"><strong>No. HP:</strong> 0812-8906-1623</li>
+                    <li class="list-group-item"><strong>Hobi:</strong> Gardening, Olahraga, Traveling</li>
+                    <li class="list-group-item"><strong>Pendidikan:</strong> Politeknik Negeri Fakfak</li>
+                    <li class="list-group-item"><strong>Program Studi:</strong> Manajemen Informatika</li>
+                </ul>
+            </div>
+
+        </div>
     </div>
 
 </div>
 
-<!-- Bootstrap Bundle -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Footer -->
+<footer class="mt-5">
+    <p>&copy; 2025 My Website. PUTRI RIANTIKA.</p>
+</footer>
 
+<!-- Bootstrap Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
